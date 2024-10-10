@@ -1,0 +1,35 @@
+@keyframes waveGradient1 {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes waveGradient2 {
+    0% {
+        background-position: 100% 50%;
+    }
+    50% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.bg-signup-wave {
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(172, 58, 58, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    background-size: 200% 200%;
+    animation: waveGradient1 10s ease infinite;
+}
+
+.bg-signin-wave {
+    background: linear-gradient(90deg, rgb(17, 10, 152) 0%, rgb(8, 121, 51) 0%, rgb(197, 8, 109) 100%);
+    background-size: 200% 200%;
+    animation: waveGradient2 10s ease infinite;
+}
